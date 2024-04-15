@@ -210,6 +210,9 @@ body.lock {
 .header__logo {
     img {
         max-height: 74px;
+        @media (max-width:991px) {
+            max-height: 60px;
+        }
     }
 }
 
@@ -358,6 +361,9 @@ body.lock {
     transition: border 0.3s ease 0s;
     color: #ffffff;
     line-height: 171%;
+    @media (max-width:991px) {
+        padding: 10px 15px;
+    }
 }
 
 .menu__link:hover {

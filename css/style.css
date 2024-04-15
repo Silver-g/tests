@@ -264,6 +264,11 @@ body.lock {
 .header__logo img {
   max-height: 74px;
 }
+@media (max-width: 991px) {
+  .header__logo img {
+    max-height: 60px;
+  }
+}
 
 .menu {
   display: flex;
@@ -380,6 +385,11 @@ body.lock {
   transition: border 0.3s ease 0s;
   color: #ffffff;
   line-height: 171%;
+}
+@media (max-width: 991px) {
+  .menu__link {
+    padding: 10px 15px;
+  }
 }
 
 .menu__link:hover {
