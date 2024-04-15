@@ -133,6 +133,11 @@ body.lock {
   justify-content: center;
   padding: 6px;
 }
+@media (max-width: 893px) {
+  .nav-bar__list {
+    padding: 4.5px;
+  }
+}
 
 .nav-bar__item {
   display: flex;
@@ -149,6 +154,16 @@ body.lock {
   max-width: 50px;
   fill: #ffffff;
   margin: 0 10px 0 0;
+}
+@media (max-width: 991px) {
+  .support__icon {
+    max-width: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .support__icon svg {
+    max-width: 30px;
+  }
 }
 
 .support__text {
@@ -174,6 +189,16 @@ body.lock {
   fill: #ffffff;
   margin: 0 10px 0 0;
 }
+@media (max-width: 991px) {
+  .mail__icon {
+    max-width: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .mail__icon svg {
+    max-width: 30px;
+  }
+}
 
 .mail__text {
   color: #cacaca;
@@ -197,6 +222,16 @@ body.lock {
   max-width: 50px;
   fill: #ffffff;
   margin: 0 10px 0 0;
+}
+@media (max-width: 991px) {
+  .social__icon {
+    max-width: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .social__icon svg {
+    max-width: 30px;
+  }
 }
 
 .social__text {
@@ -234,7 +269,7 @@ body.lock {
   display: flex;
   align-items: center;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .menu .menu__body li:hover {
     text-decoration: none;
   }
@@ -282,7 +317,7 @@ body.lock {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .menu__icon {
     display: block;
     position: absolute;
@@ -357,7 +392,7 @@ body.lock {
     padding-right: 5px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .header {
     position: fixed;
     top: 0;

@@ -72,6 +72,9 @@ body.lock {
     align-items: center;
     justify-content: center;
     padding: 6px;
+    @media (max-width: 893px) {
+        padding: 4.5px;
+    }
 
 }
 
@@ -90,6 +93,17 @@ body.lock {
     max-width: 50px;
     fill: #ffffff;
     margin: 0 10px 0 0;
+    @media (max-width: 991px) {
+        max-width: 30px;
+    }
+
+    svg {
+
+        @media (max-width: 991px) {
+            max-width: 30px;
+        }
+
+    }
 }
 
 .support__text {
@@ -115,6 +129,16 @@ body.lock {
     max-width: 50px;
     fill: #ffffff;
     margin: 0 10px 0 0;
+
+    @media (max-width: 991px) {
+        max-width: 30px;
+    }
+
+    svg {
+        @media (max-width: 991px) {
+            max-width: 30px;
+        }
+    }
 }
 
 .mail__text {
@@ -141,6 +165,14 @@ body.lock {
     max-width: 50px;
     fill: #ffffff;
     margin: 0 10px 0 0;
+    @media (max-width: 991px) {
+        max-width: 30px;
+    }
+    svg {
+        @media (max-width: 991px) {
+            max-width: 30px;
+        }
+    }
 }
 
 .social__text {
@@ -187,7 +219,7 @@ body.lock {
     display: flex;
     align-items: center;
 
-    @media (max-width:991px) {
+    @media (max-width:767px) {
         .menu__body li:hover {
             text-decoration: none;
         }
@@ -254,7 +286,7 @@ body.lock {
 .icon-menu {}
 
 .menu__icon {
-    @media (max-width:991px) {
+    @media (max-width:767px) {
         display: block;
         position: absolute;
         top: 24px;
@@ -339,7 +371,7 @@ body.lock {
     }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 767px) {
     .header {
         position: fixed;
         top: 0;
@@ -673,9 +705,10 @@ body.lock {
     background-color: #f8488b;
     height: 2px;
     width: 500px;
+
     @media (max-width: 767px) {
-        width: 100%;      
-        }
+        width: 100%;
+    }
 }
 
 .header__subtitle {
@@ -692,7 +725,7 @@ body.lock {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     padding: 0px 0px 80px 0px;
 }
 
@@ -723,12 +756,14 @@ body.lock {
         flex: 0 1 100%;
         margin: 25px 0 0 0px;
     }
+
     img {
         display: inline-block;
         box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
         width: 100%;
         max-height: 480px;
         object-fit: cover;
+
         @media (min-width: 1450px) {
             max-width: 680px;
         }
@@ -740,6 +775,7 @@ body.lock {
     flex-direction: column;
     justify-content: center;
     flex: 0 1 58%;
+
     @media (max-width: 991px) {
         flex: 0 1 100%;
     }
@@ -751,6 +787,7 @@ body.lock {
     font-weight: 700;
     line-height: 137.9%;
     padding: 0 0 35px 0;
+
     @media (max-width: 480px) {
         font-size: 20px;
         font-weight: 500;
@@ -763,6 +800,7 @@ body.lock {
     letter-spacing: 0.2px;
     font-weight: 400;
     line-height: 137.9%;
+
     @media (max-width: 480px) {
         font-size: 14px;
         letter-spacing: 0.1px;
@@ -782,6 +820,7 @@ body.lock {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
     @media (max-width: 610px) {
         flex: 0 1 50%;
         justify-content: flex-start;
@@ -793,23 +832,24 @@ body.lock {
     padding: 0 10px 0 10px;
     flex: 0 1 20%;
     margin: 0 0 15px 0;
+
     @media (max-width: 991px) {
         flex: 0 1 33.333%;
         text-align: center;
     }
+
     @media (max-width: 610px) {
         flex: 0 1 50%;
     }
 
 }
 
-.statistik__item:not(:first-child) {
-
-}
+.statistik__item:not(:first-child) {}
 
 .statistik-item__title {
     font-size: 30px;
     font-weight: 400;
+
     @media (max-width: 991px) {
         font-size: 24px;
     }
@@ -844,14 +884,17 @@ body.lock {
 
 .about-founder__image {
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+
     @media (max-width: 991px) {
         margin: 0 0 25px 0;
     }
+
     img {
         display: inline-block;
         width: 330px;
         height: 350px;
         object-fit: cover;
+
         @media (max-width: 991px) {
             width: 300px;
             height: 330px;
@@ -862,6 +905,7 @@ body.lock {
 .about-founder__content {
     padding: 0 0 0 25px;
     flex: 0 1 60%;
+
     @media (max-width: 991px) {
         flex: 0 1 100%;
     }
@@ -870,6 +914,7 @@ body.lock {
 .about-founder__title {
     font-size: 30px;
     font-weight: 500;
+
     @media (max-width: 991px) {
         font-size: 26px;
         max-width: 600px;
@@ -883,6 +928,7 @@ body.lock {
     letter-spacing: 0.2px;
     font-weight: 400;
     line-height: 137.9%;
+
     @media (max-width: 991px) {
         font-size: 16px;
     }
