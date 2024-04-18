@@ -51,3 +51,46 @@ document.onscroll = function () {
         document.body.removeAttribute('style');
     }
 }
+
+
+
+//----------------------------------------------------------------------------
+
+$(document).ready(function() {
+    const galleryItems = $('.gallery__item img');
+    let currentIndex = 0;
+
+    // Открытие модального окна с изображением
+    galleryItems.click(function() {
+        currentIndex = galleryItems.index($(this));
+        $('.modal__image').attr('src', $(this).attr('src'));
+        $('.modal').css('display', 'flex');
+        $('body').addClass('modal-open'); // Добавляем класс для отключения прокрутки
+    });
+
+    // Закрытие модального окна при клике вне изображения и стрелок
+    $('.modal').click(function(e) {
+        if (!$(e.target).hasClass('modal__content') && !$(e.target).hasClass('modal__prev') && !$(e.target).hasClass('modal__next')) {
+            $(this).css('display', 'none');
+            $('body').removeClass('modal-open'); // Удаляем класс при закрытии модального окна
+        }
+    });
+
+    // Закрытие модального окна при клике на крестик
+    $('.modal__close').click(function() {
+        $('.modal').css('display', 'none');
+        $('body').removeClass('modal-open'); // Удаляем класс при закрытии модального окна
+    });
+
+    // Обработчик события для стрелки "влево"
+    $('.modal__prev').click(function() {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        $('.modal__image').attr('src', galleryItems.eq(currentIndex).attr('src'));
+    });
+
+    // Обработчик события для стрелки "вправо"
+    $('.modal__next').click(function() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        $('.modal__image').attr('src', galleryItems.eq(currentIndex).attr('src'));
+    });
+});
