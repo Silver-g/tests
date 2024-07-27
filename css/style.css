@@ -878,8 +878,8 @@ body.lock {
 
 .about-founder-text__item {
   margin: 20px 0 0px 0;
-  background: url(../img/icons/expand_more_FILL1_wght500_GRAD-25_opsz40.png) left top -5px no-repeat;
-  padding: 0px 0 0px 35px;
+/*   background: url(../img/icons/expand_more_FILL1_wght500_GRAD-25_opsz40.png) left top -5px no-repeat; */
+  padding: 0px 0 0px 25px;
 }
 @media (max-width: 767px) {
   .about-founder-text__item {
