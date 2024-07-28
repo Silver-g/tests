@@ -878,7 +878,6 @@ body.lock {
 
 .about-founder-text__item {
   margin: 20px 0 0px 0;
-/*   background: url(../img/icons/expand_more_FILL1_wght500_GRAD-25_opsz40.png) left top -5px no-repeat; */
   padding: 0px 0 0px 25px;
 }
 @media (max-width: 767px) {
@@ -1802,6 +1801,16 @@ body.modal-open {
   }
 }
 
+.services-body__card:hover .card-content__body {
+  background-color: #2ab5e6;
+}
+.services-body__card:hover .card-content__subTitle {
+  color: #fff;
+}
+.services-body__card:hover .card-content__image svg {
+  fill: #f8488b;
+}
+
 .services-card__image img {
   width: 100%;
   height: 400px;
@@ -1818,6 +1827,7 @@ body.modal-open {
   justify-content: space-between;
   align-items: center;
   text-align: left;
+  transition: background-color 0.5s ease 0s;
 }
 
 .card-content__text {
@@ -1835,6 +1845,10 @@ body.modal-open {
   color: #9b9b9b;
 }
 
+.card-content__image {
+  transition: fill 0.5s ease 0s;
+}
+
 .services__popap {
   position: fixed;
   z-index: 2;
@@ -1843,12 +1857,13 @@ body.modal-open {
   background-color: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
-  transition: transform 0.3s ease 0s;
   padding: 150px 0 100px 0;
+  transition: opacity 0.5s ease-in-out 0s;
 }
 
 .start {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .services__popap-body {
