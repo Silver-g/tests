@@ -274,26 +274,26 @@ function changeLanguage() {
 changeLanguage();
 
 
-// selectMenu.addEventListener('change', changeURLLanguageMenu);
+selectMenu.addEventListener('change', changeURLLanguageMenu);
 
-// // перенаправить на url с указанием языка
-// function changeURLLanguageMenu() {
-//     let lang = selectMenu.value;
-//     location.href = window.location.pathname + '#' + lang;
-//     location.reload();
-// }
+// перенаправить на url с указанием языка
+function changeURLLanguageMenu() {
+    let lang = selectMenu.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
 
-// function changeLanguageMenu() {
-//     let hash = window.location.hash;
-//     hash = hash.substr(1);
-//     if (!allLang.includes(hash)) {
-//         location.href = window.location.pathname + '#ru';
-//         location.reload();
-//     }
-//     selectMenu.value = hash;
-//     for (let key in langArr) {
-//         document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];   
-//     }   
-// }
+function changeLanguageMenu() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#ru';
+        location.reload();
+    }
+    selectMenu.value = hash;
+    for (let key in langArr) {
+        document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];   
+    }   
+}
 
-// changeLanguageMenu();
+changeLanguageMenu();
