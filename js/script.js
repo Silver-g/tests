@@ -1,38 +1,61 @@
 // скрол меню навигации
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body');
+const navLinks = menuBody.querySelectorAll('.menu__link');
+
+if (iconMenu) {
+    iconMenu.addEventListener("click", function () {
+        // Проверяем состояние класса 'active' на теле меню
+        if (menuBody.classList.contains('active')) {
+            // Если 'active' присутствует, убираем 'active' и 'lock'
+            menuBody.classList.remove('active');
+            iconMenu.classList.remove('active');
+            document.body.classList.remove('lock');
+        } else {
+            // Если 'active' отсутствует, добавляем 'active' и 'lock'
+            menuBody.classList.add('active');
+            iconMenu.classList.add('active');
+            document.body.classList.add('lock');
+        }
+    });
+
+    // Закрытие меню при клике на пункт навигации
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Убираем 'active' и 'lock', чтобы разрешить прокрутку
+            menuBody.classList.remove('active');
+            iconMenu.classList.remove('active');
+            document.body.classList.remove('lock');
+        });
+    });
+}
 const menulinks = document.querySelectorAll('.anchor__link[data-goto]');
 if (menulinks.length > 0) {
-    menulinks.forEach(menuLink =>{
+    menulinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
     });
     function onMenuLinkClick(e) {
         const menuLink = e.target;
-        if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY  - document.querySelector('header'.offsetHeight);
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header'.offsetHeight);
 
-            if (iconMenu.classList.contains('_active')) {
-                document.body.classList.remove('_lcok');
-                iconMenu.classList.remove('_active');
-                menuBody.classList.remove('_active');
+            if (iconMenu.classList.contains('active')) {
+                iconMenu.classList.remove('active');
+                menuBody.classList.remove('active');
+                document.body.classList.remove('lcok');
             }
 
             window.scrollTo({
                 top: gotoBlockValue,
                 behavior: "smooth"
             });
+            
             e.preventDefault();
         }
     }
 }
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-    iconMenu.addEventListener("click", function (e) {
-        document.body.classList.toggle('lock');
-        iconMenu.classList.toggle('active');
-        menuBody.classList.toggle('active');
-    });
-}
+
 
 // не ну реально куртой скрол шапки
 let header = document.querySelector('.headerJs');
@@ -180,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let start = 0;
         const end = parseInt(element.dataset.max.replace(/\D/g, ''), 10); // Удаляем все символы, кроме цифр
 
-        const duration = 2000; // Продолжительность анимации в миллисекундах
+        const duration = 3500; // Продолжительность анимации в миллисекундах
         const frameDuration = 1000 / 60; // 60 кадров в секунду
         const totalFrames = Math.round(duration / frameDuration);
         const easeOutQuad = t => t * (2 - t);
@@ -217,3 +240,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
     numbers.forEach((number) => animateCounter(number));
 });
+
+
+
+
+//----------------------
+const select = document.querySelector('.change-lang');
+const allLang = ['ru', 'en'];
+const selectMenu = document.querySelector('.change-lang__menu');
+// import {langArr} from '.lang.js';
+select.addEventListener('change', changeURLLanguage);
+
+// перенаправить на url с указанием языка
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
+
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#ru';
+        location.reload();
+    }
+    select.value = hash;
+    for (let key in langArr) {
+        document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];   
+    }   
+}
+
+changeLanguage();
+
+
+// selectMenu.addEventListener('change', changeURLLanguageMenu);
+
+// // перенаправить на url с указанием языка
+// function changeURLLanguageMenu() {
+//     let lang = selectMenu.value;
+//     location.href = window.location.pathname + '#' + lang;
+//     location.reload();
+// }
+
+// function changeLanguageMenu() {
+//     let hash = window.location.hash;
+//     hash = hash.substr(1);
+//     if (!allLang.includes(hash)) {
+//         location.href = window.location.pathname + '#ru';
+//         location.reload();
+//     }
+//     selectMenu.value = hash;
+//     for (let key in langArr) {
+//         document.querySelector('.lng-' + key).innerHTML = langArr[key][hash];   
+//     }   
+// }
+
+// changeLanguageMenu();

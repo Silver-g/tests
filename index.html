@@ -26,7 +26,7 @@
                                         d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
                                 </svg>
                             </div>
-                            <div class="support__text">Телефон: <a href="tel:#">+7(777)777-77-77</a></div>
+                            <div class="support__text"><span class="phone-support lng-phone-support">Телефон:</span><a href="tel:+79260408313">+7 (926) 040-83-13</a></div>
                         </div>
                     </div>
                     <div class="nav-bar-content__mail nav-bar__list">
@@ -38,8 +38,8 @@
                                         d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
                                 </svg>
                             </div>
-                            <div class="mail__text">
-                                Почта: <a href="mailto:">elparts.engineering@mail.ru</a>
+                            <div class="mail__text lng-mail__text">
+                                <span class="mail-support lng-mail-support">Почта:</span> <a href="mailto:Info@elparts-atm.com">Info@elparts-atm.com</a>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                                         d="M280-240q-17 0-28.5-11.5T240-280v-80h520v-360h80q17 0 28.5 11.5T880-680v600L720-240H280ZM80-280v-560q0-17 11.5-28.5T120-880h520q17 0 28.5 11.5T680-840v360q0 17-11.5 28.5T640-440H240L80-280Zm520-240v-280H160v280h440Zm-440 0v-280 280Z" />
                                 </svg>
                             </div>
-                            <div class="social__text">Соц сети: <a href="https://wa.me/79859053534" target="_blank">
+                            <div class="social__text lng-social__text"><span class="socisal-net-support lng-socisal-net-support">Соц сети:</span> <a href="https://wa.me/79859053534" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 39 39">
                                         <path fill="#00E676"
                                             d="M10.7 32.8l.6.3c2.5 1.5 5.3 2.2 8.1 2.2 8.8 0 16-7.2 16-16 0-4.2-1.7-8.3-4.7-11.3s-7-4.7-11.3-4.7c-8.8 0-16 7.2-15.9 16.1 0 3 .9 5.9 2.4 8.4l.4.6-1.6 5.9 6-1.5z">
@@ -74,7 +74,18 @@
                                             d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z" />
                                     </svg>
                                 </a>
+                                <a href="https://www.linkedin.com/in/nikita-kosyanenko-63a5a3100?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank">
+                                    <img src="img/icons/linkedin.png" alt="">
+                                </a>
                             </div>
+                        </div>
+                        <div class="nav-bar__item">
+                            <select class="change-lang">
+                                <option class="ru__lang-item" selected value="ru"><span class="ru-lang">RU 🇷🇺</span>
+                                </option>
+                                <option class="en__lang-item" value="en"><span class="en-lang">EN 🇬🇧</span></option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -88,12 +99,22 @@
                             <span></span>
                             <span></span>
                         </div>
+                        <div class="menu__lang">
+                            <select class="change-lang__menu">
+                                <option class="ru__lang-item" value="ru" selected><span class="ru-lang">RU 🇷🇺</span>
+                                </option>
+                                <option class="en__lang-item" value="en"><span class="en-lang">EN 🇬🇧</span></option>
+                            </select>
+                        </div>
                         <div class="menu__body">
                             <ul class="menu__list">
-                                <li><a data-goto=".wrapper" href="#" class="menu__link anchor__link">Главная</a></li>
-                                <li><a data-goto=".about-us__page" href="#" class="menu__link anchor__link">О нас</a></li>
-                                <li><a data-goto=".services__page" href="#" class="menu__link anchor__link">Услуги</a></li>
-                                <li><a data-goto=".contact-us__page" href="#" class="menu__link anchor__link">Контакты</a></li>
+                                <li><a data-goto=".wrapper" href="#" class="menu__link anchor__link menu-link__main lng-menu-link__main">Главная</a></li>
+                                <li><a data-goto=".about-us__page" href="#" class="menu__link anchor__link menu-link__aboutUs lng-menu-link__aboutUs">О нас</a>
+                                </li>
+                                <li><a data-goto=".services__page" href="#" class="menu__link anchor__link menu-link__service lng-menu-link__service">Услуги</a>
+                                </li>
+                                <li><a data-goto=".contact-us__page" href="#"
+                                        class="menu__link anchor__link menu-link__contact lng-menu-link__contact">Контакты</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -103,16 +124,18 @@
             <div class="main-screen">
                 <div class="main-screen-content__wrap container">
                     <div class="screen-content__block">
-                        <h1 class="screen-content__title">Эльпартс Инжиниринг</h1>
-                        <div class="screen-content__sub-title">
+                        <h1 class="screen-content__title lng-screen-content__title ">Эльпартс Инжиниринг</h1>
+                        <div class="screen-content__sub-title lng-screen-content__sub-title">
                             Если Вы о нас не слышали, то только потому, что никто не будет раскрывать своих уникальных
                             партнеров и поставщиков. Смело обращайтесь к нам, если Вам необходимо качественно и надежно
                             решить свои задачи!
                         </div>
                     </div>
                     <div class="screen-content__buttons">
-                        <a data-goto=".contact-us__page" href="#" class="content-button contact anchor__link">Оставить заявку</a>
-                        <a data-goto=".about-us__page" href="#" class="content-button learn anchor__link">Читать больше</a>
+                        <a data-goto=".contact-us__page" href="#" class="content-button content-button-contact lng-content-button-contact contact anchor__link">Оставить
+                            заявку</a>
+                        <a data-goto=".about-us__page" href="#" class="content-button content-button-read lng-content-button-read learn anchor__link">Читать
+                            больше</a>
                     </div>
                 </div>
                 <div class="main-screen__bg ibg">
@@ -169,32 +192,32 @@
                 <section class="about-us__page">
                     <div class="about-us-page__content">
                         <div class="header-title__body">
-                            <h2 class="header__title container">Elparts Engineering одни из лучших в России</h2>
+                            <h2 class="header__title container header-title__abUs lng-header-title__abUs">Elparts Engineering надежный партнер</h2>
                             <span class="decor-1"></span>
-                            <p class="header__subtitle">О нас</p>
+                            <p class="header__subtitle header-subtitle-abUs lng-header-subtitle-abUs">О компании</p>
                         </div>
                         <div class="about-us__body container">
                             <div class="about-us__item">
                                 <div class="about-us__content">
-                                    <h2 class="about-us__title">Производим, обслуживаем и ремонтируем банкоматы и
+                                    <h2 class="about-us__title lng-about-us__title">Производим, обслуживаем и ремонтируем банкоматы и
                                         банковское
                                         оборудование</h2>
-                                    <p class="about-us__text">
+                                    <p class="about-us__text about-us__text-first lng-about-us__text-first">
                                         ООО “ЭЛЬПАРТС ИНЖИНИРИНГ” молодая
-                                        производственно-сервисная компания опытных и уникальных специалистов,креативных
+                                        производственно-сервисная компания опытных и уникальных специалистов, креативных 
                                         инженеров
                                         по
                                         проектированию, ремонту, обслуживанию и изготовлению под ключ банкоматов и
                                         банковского
                                         оборудования.
                                     </p>
-                                    <p class="about-us__text">
+                                    <p class="about-us__text about-us__text-second lng-about-us__text-second">
                                         За относительно короткий срок компания смогла стать одним из лидеров в своем
                                         сегменте.
                                         Работая и развиваясь не только на российском, но и на мировом рынке.
                                     </p>
                                 </div>
-                                <div class="about-us__img"><img src="img/main photos/main-logo__photo.ver2.png"
+                                <div class="about-us__img"><img src="img/main photos/com-name.png"
                                         alt="NO-ABOUT-US-IMAGE">
                                 </div>
                             </div>
@@ -202,25 +225,25 @@
                                 <div class="statistik__body">
                                     <div class="statistik__item">
                                         <h3 class="statistik-item__title"><span class="number" data-max="11">0</span>
-                                            лет опыта</h3>
-                                        <p class="statistik-item__text">11 лет опыта работы с банковским оборудованием
+                                            <span class="exp-years lng-exp-years">лет опыта</span></h3>
+                                        <p class="statistik-item__text statistik-item-exp lng-statistik-item-exp ">11 лет опыта работы с банковским оборудованием
                                         </p>
                                     </div>
                                     <div class="statistik__item">
                                         <h3 class="statistik-item__title"><span class="number" data-max="300">0</span>
-                                            банкоматов в год</h3>
-                                        <p class="statistik-item__text">Ежегодно проводим работу с более чем 300
+                                            <span class="bank-years lng-bank-years">банкоматов в год</span></h3>
+                                        <p class="statistik-item__text statistik-years-bank lng-statistik-years-bank">Ежегодно проводим работу с более чем 300
                                             банкоматами</p>
                                     </div>
                                     <div class="statistik__item">
                                         <h3 class="statistik-item__title"><span class="number" data-max="70">0</span>
-                                            клиентов и партнеров</h3>
-                                        <p class="statistik-item__text">Крупных 70 банков выбрали именно нас</p>
+                                            <span class="client-years lng-client-years">клиентов и партнеров</span></h3>
+                                        <p class="statistik-item__text statistik-client-and-part lng-statistik-client-and-part">Крупных 70 банков выбрали именно нас</p>
                                     </div>
                                     <div class="statistik__item">
                                         <h3 class="statistik-item__title"><span class="number" data-max="25">0</span>+
-                                            банкоматов в месяц</h3>
-                                        <p class="statistik-item__text">Ежемесячно мы отгружаем более 25 банкоматов для
+                                            <span class="banks-in-mounths lng-banks-in-mounths">банкоматов в месяц</span></h3>
+                                        <p class="statistik-item__text statistik-mounths-banks lng-statistik-mounths-banks">Ежемесячно мы отгружаем более 25 банкоматов для
                                             наших клиентов</p>
                                     </div>
                                 </div>
@@ -234,18 +257,18 @@
                                     <img src="img/photos/nikita2.jpg" alt="">
                                 </div>
                                 <div class="about-founder__content">
-                                    <h3 class="about-founder__title">Здравствуйте, я – Никита Косьяненко, основатель
+                                    <h3 class="about-founder__title lng-about-founder__title">Здравствуйте, я – Никита Косьяненко, основатель
                                         компании Elparts Engineering</h3>
                                     <ul class="about-founder__list">
-                                        <li class="about-founder-text__item">
+                                        <li class="about-founder-text__item about-founder-first-text lng-about-founder-first-text">
                                             Я прошел полный путь начиная с инженера по ремонту, до руководящих
                                             должностей. Сам собирал, устанавливал, ремонтировал банкоматы. Имея опыт
                                             теперь, как никто другой знаю, как это делать правильно и качественно.
                                         </li>
-                                        <li class="about-founder-text__item"> За 11 лет работы на рынке мне удалось
+                                        <li class="about-founder-text__item about-founder-second-text lng-about-founder-second-text"> За 11 лет работы на рынке мне удалось
                                             создать компанию, целью которой является предоставление качественных услуг и
                                             установление доверительных и партнёрских отношений с нашими клиентами.</li>
-                                        <li class="about-founder-text__item">За время работы мне удалось создать команду
+                                        <li class="about-founder-text__item about-founder-three-text lng-about-founder-three-text">За время работы мне удалось создать команду
                                             единомышленников с которыми мы дружим и работаем.</li>
                                     </ul>
                                 </div>
@@ -256,29 +279,30 @@
                 <section class="services__page">
                     <div class="services__container container">
                         <div class="header-title__body">
-                            <h2 class="header__title container">Услуги</h2>
+                            <h2 class="header__title header-title-services lng-header-title-services container">Услуги</h2>
                             <span class="decor-1"></span>
-                            <p class="header__subtitle">Мы предоставляем широкий спектор услуг, чтобы ознакомится
-                                с полным списком свяжитесь с нами.</p>
+                            <p class="header__subtitle header-subtitle-services lng-header-subtitle-services">Мы предоставляем широкий спектр услуг, чтобы ознакомится
+                                с полным списком свяжитесь с нами</p>
                         </div>
                         <div class="services__body">
                             <div class="services-body__container">
                                 <button type="button" class="services-body__card dyeLink">
                                     <div class="services-body__wrap">
                                         <div class="services-card__image">
-                                            <img src="img/photos/services/serv1.jpg" alt="">
+                                            <img src="img/serv/paint.jpg" alt="NO-SERV-PAINT">
                                         </div>
                                         <div class="services-card__content">
                                             <div class="card-content__body">
                                                 <div class="card-content__text">
                                                     <h3 class="card-content__title">Покраска</h3>
-                                                    <div class="card-content__subTitle">Покраска банкоматов и иных изделий</div>
+                                                    <div class="card-content__subTitle">Полная и локальная покраска
+                                                        оборудования и отдельных элементов.</div>
                                                 </div>
                                                 <div class="card-content__image">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px"
                                                         viewBox="0 -960 960 960" width="40px" fill="#2ab5e6">
                                                         <path
-                                                            d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                                            d="M480.67-120v-66.67h292.66v-586.66H480.67V-840h292.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H480.67Zm-63.34-176.67-47-48 102-102H120v-66.66h351l-102-102 47-48 184 184-182.67 182.66Z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -300,24 +324,29 @@
                                             <div class="popap-content__textBlock">
                                                 <h3 class="popap__title">Покраска</h3>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
-                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
-                                                    fugit hic?
+                                                    В нашем сервисном центре мы можем покрасить оборудование в
+                                                    необходимый вам цвет учитываю все особенности технологии покраски!
                                                 </div>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni
-                                                    quidem natus dolore fugiat libero, quia ipsam ullam eius, est architecto
-                                                    beatae consectetur id totam illo! Quas suscipit illo iste.
+                                                    - Подготовка к покраске, разбор и снятие элементов
                                                 </div>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
-                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
-                                                    fugit hic?
+                                                    - Снятие старого ЛКП( до метала при необходимости)
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Выравнивание повреждений ( шпаклёвка, выстукивание)
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Грунтовка
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Покраска
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Сборка
                                                 </div>
                                             </div>
-                                            <div class="popap-content__image"><img src="img/photos/services/serv1.jpg"
+                                            <div class="popap-content__image"><img src="img/photos/services/serv1.1.jpg"
                                                     alt=""></div>
                                         </div>
                                     </div>
@@ -325,19 +354,21 @@
                                 <button type="button" class="services-body__card saleLink">
                                     <div class="services-body__wrap">
                                         <div class="services-card__image">
-                                            <img src="img/photos/services/serv2.jpg" alt="">
+                                            <img src="img/photos/services/serv2.jpg" alt="NO-SERV-KEY-BANK">
                                         </div>
                                         <div class="services-card__content">
                                             <div class="card-content__body">
                                                 <div class="card-content__text">
                                                     <h3 class="card-content__title">Банкомат под ключ</h3>
-                                                    <div class="card-content__subTitle">Готовый к использованию банкомат</div>
+                                                    <div class="card-content__subTitle">Готовый к использованию
+                                                        банкомат, комплексное восстановление банкомата
+                                                    </div>
                                                 </div>
                                                 <div class="card-content__image">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px"
                                                         viewBox="0 -960 960 960" width="40px" fill="#2ab5e6">
                                                         <path
-                                                            d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                                            d="M480.67-120v-66.67h292.66v-586.66H480.67V-840h292.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H480.67Zm-63.34-176.67-47-48 102-102H120v-66.66h351l-102-102 47-48 184 184-182.67 182.66Z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -350,34 +381,47 @@
                                             <button
                                                 class="services-popap__crose services-popap-crose__close popap-crose__sale">
                                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M32 28.8L19.2 16L32 3.2L28.8 0L16 12.8L3.2 0L0 3.2L12.8 16L0 28.8L3.2 32L16 19.2L28.8 32L32 28.8Z"
-                                                        fill="white" />
-                                                </svg>
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M32 28.8L19.2 16L32 3.2L28.8 0L16 12.8L3.2 0L0 3.2L12.8 16L0 28.8L3.2 32L16 19.2L28.8 32L32 28.8Z"
+                                                    fill="white" />
+                                            </svg>
                                             </button>
                                             <div class="popap-content__textBlock">
                                                 <h3 class="popap__title">Банкомат под ключ</h3>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
-                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
-                                                    fugit hic?
+                                                    Банкомат под ключ это комплексная услуга, включающая в себя
+                                                    создание, или доработку банкомата
+                                                    готового к использованию с учетем индивидуальныъ предпочтений
+                                                    заказчика.
                                                 </div>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni
-                                                    quidem natus dolore fugiat libero, quia ipsam ullam eius, est architecto
-                                                    beatae consectetur id totam illo! Quas suscipit illo iste.
+                                                    - Полная покраска с разбором
                                                 </div>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
-                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
-                                                    fugit hic?
+                                                    - Ремонт запчастей с заменой расходных материалов
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Подбор комплектации необходимой для ваших мошностей
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Установка дополнительного оборудования по требованиям заказчика
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Финальное тестирование перед отгрузкой
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Упаковка на паллет
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Доставка банкоматов( услуги брокера и страховка включены)
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    - Гарантия на проделанные работы
                                                 </div>
                                             </div>
-                                            <div class="popap-content__image"><img src="img/photos/services/serv2.jpg"
-                                                    alt=""></div>
+                                            <div class="popap-content__image"><img src="img/serv/keyBank.jpg" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -390,13 +434,15 @@
                                             <div class="card-content__body">
                                                 <div class="card-content__text">
                                                     <h3 class="card-content__title">Продажа комлектующих</h3>
-                                                    <div class="card-content__subTitle">Продажа запчастей и комлектующих</div>
+                                                    <div class="card-content__subTitle">Продажа запчастей и расходных
+                                                        материалов новых и восстановленых
+                                                    </div>
                                                 </div>
                                                 <div class="card-content__image">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px"
                                                         viewBox="0 -960 960 960" width="40px" fill="#2ab5e6">
                                                         <path
-                                                            d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                                            d="M480.67-120v-66.67h292.66v-586.66H480.67V-840h292.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H480.67Zm-63.34-176.67-47-48 102-102H120v-66.66h351l-102-102 47-48 184 184-182.67 182.66Z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -416,27 +462,89 @@
                                                 </svg>
                                             </button>
                                             <div class="popap-content__textBlock">
-                                                <h3 class="popap__title">Продажа запчастей</h3>
+                                                <h3 class="popap__title">Мы продаем, как новые так и востановленные
+                                                    комплектующие для банкоматов и банковского оборудования.</h3>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
-                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
-                                                    fugit hic?
+                                                    - Новые запчасти: Высококачественные детали, обеспечивающие
+                                                    надежность и долговечность с гарантией.
                                                 </div>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni
-                                                    quidem natus dolore fugiat libero, quia ipsam ullam eius, est architecto
-                                                    beatae consectetur id totam illo! Quas suscipit illo iste.
+                                                    - Восстановленные запчасти: Все детали проходят качественный
+                                                    контроль с тестированием после восстановления и предлагаются по
+                                                    доступной цене.
                                                 </div>
                                                 <div class="popap-textBlock__item">
-                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
-                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
-                                                    fugit hic?
+                                                    - Расходные материалы: Все необходимые компоненты, которые вам
+                                                    необходимо для качественого ремонта от отобраных нами проверенных
+                                                    производителей.
                                                 </div>
                                             </div>
-                                            <div class="popap-content__image"><img src="img/photos/services/serv3.jpg"
+                                            <div class="popap-content__image"><img src="img/photos/services/serv3.1.jpg"
                                                     alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="services-body__card repairLink">
+                                    <div class="services-body__wrap">
+                                        <div class="services-card__image">
+                                            <img src="img/photos/services/serv4.1.jpg" alt="">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <div class="card-content__body">
+                                                <div class="card-content__text">
+                                                    <h3 class="card-content__title">Ремонт оборудования</h3>
+                                                    <div class="card-content__subTitle">Ремонт любой сложности
+                                                        банкоматов и
+                                                        комплектующих</div>
+                                                </div>
+                                                <div class="card-content__image">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px"
+                                                        viewBox="0 -960 960 960" width="40px" fill="#2ab5e6">
+                                                        <path
+                                                            d="M480.67-120v-66.67h292.66v-586.66H480.67V-840h292.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H480.67Zm-63.34-176.67-47-48 102-102H120v-66.66h351l-102-102 47-48 184 184-182.67 182.66Z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="services__popap repair start">
+                                    <div class="services__popap-body">
+                                        <div class="popap-body__content">
+                                            <button
+                                                class="services-popap__crose services-popap-crose__close popap-crose__repair">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M32 28.8L19.2 16L32 3.2L28.8 0L16 12.8L3.2 0L0 3.2L12.8 16L0 28.8L3.2 32L16 19.2L28.8 32L32 28.8Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                            <div class="popap-content__textBlock">
+                                                <h3 class="popap__title">Ремонт оборудования, диагностика и удаленная
+                                                    помощь устранении поломки</h3>
+                                                <div class="popap-textBlock__item">
+                                                    – Диагностика оборудования: Наши опытные специалисты при помощи
+                                                    специализированного оборудования выявят причину поломки и продумают
+                                                    решение для ее устранения.
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    – Ремонт механических и электронных частей: Замена и восстановление
+                                                    всех видов компонентов, включая дисплеи, моторы,проводку, платы
+                                                    управления и многое другое.
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    – Обслуживание и профилактика: профилактическое обслуживание для
+                                                    предотвращения поломок и увеличения срока службы оборудования.
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    – Экстренные услуги: Срочный ремонт и техническая поддержка 24/7,
+                                                    чтобы минимизировать простои ваших банкоматов.
+                                                </div>
+                                            </div>
+                                            <div class="popap-content__image"><img src="img/photos/services/serv4.jpg"
+                                                    alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -449,7 +557,8 @@
                                             <div class="card-content__body">
                                                 <div class="card-content__text">
                                                     <h3 class="card-content__title">Ремонт оборудования</h3>
-                                                    <div class="card-content__subTitle">Ремонт банкоматов и комплектующих</div>
+                                                    <div class="card-content__subTitle">Ремонт банкоматов и
+                                                        комплектующих</div>
                                                 </div>
                                                 <div class="card-content__image">
                                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px"
@@ -478,24 +587,92 @@
                                                 <h3 class="popap__title">Ремонт оборудования</h3>
                                                 <div class="popap-textBlock__item">
                                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
+                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat
+                                                    ea
                                                     repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
                                                     fugit hic?
                                                 </div>
                                                 <div class="popap-textBlock__item">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni
-                                                    quidem natus dolore fugiat libero, quia ipsam ullam eius, est architecto
+                                                    quidem natus dolore fugiat libero, quia ipsam ullam eius, est
+                                                    architecto
                                                     beatae consectetur id totam illo! Quas suscipit illo iste.
                                                 </div>
                                                 <div class="popap-textBlock__item">
                                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat ea
+                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat
+                                                    ea
                                                     repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
                                                     fugit hic?
                                                 </div>
                                             </div>
                                             <div class="popap-content__image"><img src="img/photos/services/serv4.jpg"
-                                                    alt=""></div>
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="services-body__card repairLink">
+                                    <div class="services-body__wrap">
+                                        <div class="services-card__image">
+                                            <img src="img/photos/services/serv4.jpg" alt="">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <div class="card-content__body">
+                                                <div class="card-content__text">
+                                                    <h3 class="card-content__title">Ремонт оборудования</h3>
+                                                    <div class="card-content__subTitle">Ремонт банкоматов и
+                                                        комплектующих</div>
+                                                </div>
+                                                <div class="card-content__image">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px"
+                                                        viewBox="0 -960 960 960" width="40px" fill="#2ab5e6">
+                                                        <path
+                                                            d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="services__popap repair start">
+                                    <div class="services__popap-body">
+                                        <div class="popap-body__content">
+                                            <button
+                                                class="services-popap__crose services-popap-crose__close popap-crose__repair">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M32 28.8L19.2 16L32 3.2L28.8 0L16 12.8L3.2 0L0 3.2L12.8 16L0 28.8L3.2 32L16 19.2L28.8 32L32 28.8Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                            <div class="popap-content__textBlock">
+                                                <h3 class="popap__title">Ремонт оборудования</h3>
+                                                <div class="popap-textBlock__item">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat
+                                                    ea
+                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
+                                                    fugit hic?
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni
+                                                    quidem natus dolore fugiat libero, quia ipsam ullam eius, est
+                                                    architecto
+                                                    beatae consectetur id totam illo! Quas suscipit illo iste.
+                                                </div>
+                                                <div class="popap-textBlock__item">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+                                                    nihil ipsa in illo reprehenderit, aliquid sequi, harum nisi repellat
+                                                    ea
+                                                    repellendus eius facilis magni quam nesciunt voluptatibus reiciendis
+                                                    fugit hic?
+                                                </div>
+                                            </div>
+                                            <div class="popap-content__image"><img src="img/photos/services/serv4.jpg"
+                                                    alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -514,19 +691,17 @@
                                             <div class="contact-us-textBlock__content content__address">
                                                 <h4 class="contact-us-item__title">Адрес</h4>
                                                 <p class="contact-us-item__text"><a href="#"
-                                                        class="contact-us-link__address" target="_blank">212 Sun Valley
-                                                        Ave,
-                                                        Brooklyn, NewYork United States
-                                                    </a>
+                                                        class="contact-us-link__address" target="_blank">Россия ,
+                                                        Подольск, микрорайон Климовск , ул.Заводская 1а</a>
                                                 </p>
                                             </div>
                                         </li>
                                         <li class="contact-us-textBlock__item item__phones">
                                             <div class="contact-us-textBlock__content content__phone">
                                                 <h4 class="contact-us-item__title">Телефон</h4>
-                                                <p class="contact-us-item__text"><a href="tel:#"
+                                                <p class="contact-us-item__text"><a href="tel:+79260408313"
                                                         class="contact-us-link__phone">
-                                                        +1-800-700-6200
+                                                        +7 (926) 040-83-13
                                                     </a>
                                                 </p>
                                             </div>
@@ -534,9 +709,9 @@
                                         <li class="contact-us-textBlock__item item__mail">
                                             <div class="contact-us-textBlock__content content__mail">
                                                 <h4 class="contact-us-item__title">Почта</h4>
-                                                <p class="contact-us-item__text"><a href="mailto:#"
+                                                <p class="contact-us-item__text"><a href="mailto:Info@elparts-atm.com"
                                                         class="contact-us-link__mail">
-                                                        mail@demolink.org
+                                                        Info@elparts-atm.com
                                                     </a>
                                                 </p>
                                             </div>
@@ -599,22 +774,22 @@
                                 <img src="img/gallery/arrownazad.png" alt="Next">
                             </div>
                             <div class="gallery__item">
-                                <img src="img/gallery/gallery-image-original-1-1200x800.jpg" alt="no-gallery-1">
+                                <img src="img/gallery/gal1.jpg" alt="no-gallery-1">
                             </div>
                             <div class="gallery__item">
-                                <img src="img/gallery/gallery-image-original-2-1200x434.jpg" alt="no-gallery-2">
+                                <img src="img/gallery/gal4.jpg" alt="no-gallery-2">
                             </div>
                             <div class="gallery__item">
-                                <img src="img/gallery/gallery-image-original-3-1200x800.jpg" alt="no-gallery-3">
+                                <img src="img/gallery/gal6.jpg" alt="no-gallery-3">
                             </div>
                             <div class="gallery__item">
-                                <img src="img/gallery/gallery-image-original-4-1200x800.jpg" alt="no-gallery-4">
+                                <img src="img/gallery/gal3.jpg" alt="no-gallery-4">
                             </div>
                             <div class="gallery__item">
-                                <img src="img/gallery/gallery-image-original-5-1200x801.jpg" alt="no-gallery-5">
+                                <img src="img/gallery/gal5.jpg" alt="no-gallery-5">
                             </div>
                             <div class="gallery__item">
-                                <img src="img/gallery/gallery-image-original-6-1200x800.jpg" alt="no-gallery-6">
+                                <img src="img/gallery/gal2.jpg" alt="no-gallery-6">
                             </div>
                         </div>
                     </div>
@@ -645,9 +820,11 @@
                                         </svg>
                                     </div>
                                     <div class="footer-item__text">
-                                        <p class="footer-text__content">+7 777-777-77-77</p>
-                                        <p class="footer-text__sub-text">Поддержка от наших специалистов 24 часа в сутки 7 дней в неделю
-                                            </p>
+                                        <p class="footer-text__content"><a href="tel:+79260408313">+7 (926)
+                                                040-83-13</a></p>
+                                        <p class="footer-text__sub-text">Поддержка от наших специалистов 24 часа в сутки
+                                            7 дней в неделю
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -655,19 +832,24 @@
                                 <div class="footer-item__body">
                                     <ul class="footer-item__list">
                                         <li class="footer-list__item">
-                                            <a data-goto=".wrapper" href="#" class="footer-item__link anchor__link">Главная</a>
+                                            <a data-goto=".wrapper" href="#"
+                                                class="footer-item__link anchor__link">Главная</a>
                                         </li>
                                         <li class="footer-list__item">
-                                            <a data-goto=".about-us__page" href="#" class="footer-item__link anchor__link">О нас</a>
+                                            <a data-goto=".about-us__page" href="#"
+                                                class="footer-item__link anchor__link">О нас</a>
                                         </li>
                                         <li class="footer-list__item">
-                                            <a data-goto=".services__page" href="#" class="footer-item__link anchor__link">Услуги</a>
+                                            <a data-goto=".services__page" href="#"
+                                                class="footer-item__link anchor__link">Услуги</a>
                                         </li>
                                         <li class="footer-list__item">
-                                            <a data-goto=".contact-us__page" href="#" class="footer-item__link anchor__link">Оставить заявку</a>
+                                            <a data-goto=".contact-us__page" href="#"
+                                                class="footer-item__link anchor__link">Оставить заявку</a>
                                         </li>
                                         <li class="footer-list__item">
-                                            <a data-goto=".gallery__page" href="#" class="footer-item__link anchor__link">Отзовы</a>
+                                            <a data-goto=".gallery__page" href="#"
+                                                class="footer-item__link anchor__link">Отзывы</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -697,6 +879,10 @@
                                                     d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z" />
                                             </svg>
                                         </a>
+                                        <a href="https://www.linkedin.com/in/nikita-kosyanenko-63a5a3100?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            target="_blank">
+                                            <img src="img/icons/linkedin.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -708,6 +894,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js" defer></script>
+    <script src="js/lang.js"></script>
 </body>
 
 </html>
